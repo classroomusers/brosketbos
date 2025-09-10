@@ -12,7 +12,7 @@
     <meta name="description" content="Online multiplayer basketball! Dunk all over your bros!" />
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="shortcut icon" type="image/png" href="./favicon.png" />
-    <script type="text/javascript" src="./BasketBros.js?th=448"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/classroomusers/brosketbos@main/BasketBrosx.js?th=448"></script>
     <script>
       window.addEventListener(
         "touchmove",
@@ -274,7 +274,6 @@
       </div>
     </div>
 
-    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script>
       var lastRefresh = 0;
       function ShowAd1(doRefresh) {
@@ -447,6 +446,23 @@
         }, 32000);*/
 
 
+     var sid = "vqpdso5mdr0n80kkknmkbi3ntg";
+      function updateStatus(fromEvent = false) {
+        const req = new XMLHttpRequest();
+        var aStr = "" + sid;
+        if (fromEvent == true) aStr = aStr + "&e=1";
+        req.open("GET", aStr);
+        req.send();
+      }
+      function SendEvent(theEvent, theAction) {
+        updateStatus(true);
+        
+      }
+      
+      updateStatus(true);
+
+      
+    
     </script>
   </body>
 </html>
